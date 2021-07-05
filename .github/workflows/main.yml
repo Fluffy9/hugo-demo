@@ -1,0 +1,23 @@
+name: Bluzelle-Action
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: hugoDocs
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        path: site
+    
+    - name: Hugo
+      uses: klakegg/actions-hugo@1.0.0
+      with: 
+        source: ./site
+
+    - name: Bluzelle
+      uses: fluffy9/bluzelle-action@1.3.2
+
