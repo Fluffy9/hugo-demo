@@ -19,5 +19,5 @@ jobs:
         source: ./site
 
     - name: Bluzelle
-      uses: fluffy9/bluzelle-action@v1
+      uses: fluffy9/bluzelle@v1
 
