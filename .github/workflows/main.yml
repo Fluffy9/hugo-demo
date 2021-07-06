@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: hugoDocs
+    - name: Website
       uses: actions/checkout@v2
       with:
         fetch-depth: 0
@@ -19,5 +19,5 @@ jobs:
         source: ./site
 
     - name: Bluzelle
-      uses: fluffy9/bluzelle-action@1.3.2
+      uses: fluffy9/bluzelle-action@v1
 
